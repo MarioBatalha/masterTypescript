@@ -1,0 +1,23 @@
+import React from "react";
+
+interface IUser {
+  name: string;
+  email: string;
+}
+
+interface Props {
+  user: IUser;
+}
+
+const User = ({ user }: Props) => {
+  return (
+    <div>
+      <strong>Nome: </strong>
+      {user.name}
+      <strong>Email: </strong>
+      {user.email}
+    </div>
+  );
+};
+
+export default User;
